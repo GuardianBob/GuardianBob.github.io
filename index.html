@@ -413,25 +413,6 @@
             
         </script>
         <script>
-            // document.getElementsByClassName("resize_click").addEventListener("click", transition_size);
-            document.querySelectorAll('.resize_click').forEach(item => {
-                    item.addEventListener('click', event => {
-                        gsap.to(item, {
-                            duration: .2,
-                            scale: .5
-                        });
-                        gsap.to(item, {
-                            delay: .2,
-                            duration: .2,
-                            scale: 1
-                        });
-                    })
-                })
-            // gsap.to(".highlight", { duration: 2, color: "#7C7C7D", repeat: -1, repeatDelay: 2 });
-            gsap.to(".highlight", { duration: 3, color: "#1976D2", repeat: -1, repeatDelay: 3 });
-            gsap.to(".highlight", { delay: 3, duration: 3, color: "#ff991a", repeat: -1, repeatDelay: 3 });
-        </script>
-        <script>
             var app = new Vue({
                 el: '.App',
                 name: 'Portfolio',
@@ -445,7 +426,7 @@
                     async get_projects() {
                         this.projects = project_list
                         this.additional = additional_list
-                        console.log(this.additional)
+                        // console.log(this.additional)
                     }
                 },
                 mounted() {
@@ -458,6 +439,25 @@
 
                 },
             })
+        </script>
+        <script>
+            // document.getElementsByClassName("resize_click").addEventListener("click", transition_size);
+            document.querySelectorAll('.resize_click').forEach(item => {
+                item.addEventListener('click', event => {
+                    gsap.to(item, {
+                        duration: .2,
+                        scale: .5
+                    });
+                    gsap.to(item, {
+                        delay: .2,
+                        duration: .2,
+                        scale: 1
+                    });
+                })
+            })
+            // gsap.to(".highlight", { duration: 2, color: "#7C7C7D", repeat: -1, repeatDelay: 2 });
+            gsap.to(".highlight", { duration: 3, color: "#1976D2", repeat: -1, repeatDelay: 3 });
+            gsap.to(".highlight", { delay: 3, duration: 3, color: "#ff991a", repeat: -1, repeatDelay: 3 });
         </script>
     </body>
 </html>
