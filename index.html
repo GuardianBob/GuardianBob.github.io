@@ -269,14 +269,14 @@
                         <p class="text-black-50 mb-0 h4 text-center">Please visit my <a href="https://www.github.com/GuardianBob" target="new">GitHub</a> for my more recent projects.</p>
                     </div>
                 </div>
-                <div class="row justify-content-center no-gutters" v-for="project in projects" :key="project.id">
+                <div class="row justify-content-center no-gutters" v-for="project in projects" :key="projects.indexOf(project)">
                     <div class="col-lg-6 project bg-black mx-auto">
                         <a :href="project.demo" target="new"><img class="img-fluid img-center p_image" :src="project.image" alt=""
                                 width="100%" /></a>
                         <div class="middle"><a :href="project.demo" class="btn btn-primary" target="new">
                                 Live Demo</a></div>
                     </div>
-                    <div class="col-lg-6" :class="{ 'order-lg-first': project.id % 2 === 0 }">
+                    <div class="col-lg-6" :class="{ 'order-lg-first': projects.indexOf(project) % 2 === 0 }">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
@@ -313,7 +313,7 @@
                                     <a href="https://www.github.com/guardianbob" target="new">
                                         <h4 class="text-white">Additional Projects</h4>
                                     </a>
-                                    <div v-for="project in additional" :key="project.id">
+                                    <div v-for="project in additional" :key="additional.indexOf(project)">
                                         <a :href="project.github" target="new">
                                             <h5>{{ project.name }}</h5>
                                         </a>
@@ -427,7 +427,7 @@
                         this.projects = project_list
                         this.additional = additional_list
                         // console.log(this.additional)
-                    }
+                    },
                 },
                 mounted() {
                     this.get_projects()
