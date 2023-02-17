@@ -9,6 +9,15 @@ let project_list = [
     github: "https://github.com/GuardianBob/vue-random-movie"
   },
   {
+    // id: 0, 
+    name: "Text Encryptor",
+    description: "A simple messages encryption/decryption app for messages containing sensative information such as logins or credit card numbers to be sent via text, email, etc.",
+    code: "HTML | JavaScript | CSS3",
+    image: "assets/img/text_encrypt.gif",
+    demo: "https://text-encrypt.jmeyer-dev.com/",
+    github: "https://github.com/GuardianBob/msg_encrypt_decrypt"
+  },
+  {
     // id: 1, 
     name: "Paint App Hackathon Challenge",
     description: "A simple painting web-app built utilizing Django and Python allowing users to draw in their browser and create an account to save and edit their work. Submission for MintBean.io Hiring Hackathon Challenge. ",
