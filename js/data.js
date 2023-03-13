@@ -11,7 +11,7 @@ let project_list = [
   {
     // id: 0, 
     name: "Text Encryptor",
-    description: "A simple messages encryption/decryption app for messages containing sensative information such as logins or credit card numbers to be sent via text, email, etc.",
+    description: "A simple messages encryption/decryption app for messages containing sensitive information such as logins or credit card numbers to be sent via text, email, etc.",
     code: "HTML | JavaScript | CSS3",
     image: "assets/img/text_encrypt.gif",
     demo: "https://text-encrypt.jmeyer-dev.com/",
