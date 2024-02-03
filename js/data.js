@@ -5,7 +5,7 @@ let project_list = [
     description: "This is an updated version of my TMDB movie app.  This was built in Vue and is much faster and cleaner than my previous version that was built in Python/Django.",
     code: "Vue | Quasar | JavaScript | TMDB API",
     image: "assets/img/random_movie_app.gif",
-    demo: "https://random-movie.jmeyer-dev.com/",
+    demo: "https://random-mov.jgmeyer.dev",
     github: "https://github.com/GuardianBob/vue-random-movie"
   },
   {
@@ -14,7 +14,7 @@ let project_list = [
     description: "A simple messages encryption/decryption app for messages containing sensitive information such as logins or credit card numbers to be sent via text, email, etc.",
     code: "HTML | JavaScript | CSS3",
     image: "assets/img/text_encrypt.gif",
-    demo: "https://text-encrypt.jmeyer-dev.com/",
+    demo: "https://text-encrypt.jgmeyer.dev/",
     github: "https://github.com/GuardianBob/msg_encrypt_decrypt"
   },
   {
